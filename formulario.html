@@ -1,0 +1,101 @@
+
+<form>
+    <html lang="es"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari</title>
+        <link rel="stylesheet" href="css/web2.css">
+        <body>
+            <header>
+                <h1>Formulari</h1>
+                <nav>
+                    <ul>
+                       
+                        <li><a href="galeria_d'imatges.html">Galeria de Fotos</a></li>
+                        <li><a href="index.html">Web de Benvinguda</a></li>
+                        <li><a href="Horario.html">Horari</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <form>
+                <section id="Dades">
+                    <fieldset>
+                        <legend>Dades personals</legend>
+            
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="nom" placeholder="Introdueixi el seu nom." required>
+                        
+                        <label for="Cognoms">Cognoms</label>
+                        <input type="text" id="Cognoms" name="Cognoms" placeholder="Introdueixi el seus Cognoms." required>        
+                        <label for="Data_de_naixement">Data_de_naixement</label>
+                        <input type="date" id="Data_de_naixement" name="Data_de_naixement" required>
+                       
+                        <label for="DNI">DNI</label>
+                        <input type="text" id="DNI" name="DNI" placeholder="Introdueixi el seu DNI." required>
+                       
+                        <label for="Color">Color preferit</label>
+                        <input type="color" id="Color" name="Color" placeholder="Introdueixi el seu color preferit.">
+                        
+                        
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="Email" placeholder="Introdueixi el seu E-Mail." required>
+                        <br>
+                        <label for="sexe">Sexe:</label>
+                        <input type="radio"  name="sexe">
+                        Home
+                        <input type="radio"  name="sexe">
+                        Dona 
+                        <br>
+                        <label for="estudis">Estudis</label>
+                        <select name="estudis" id="estudis">
+                            <optgroup label="Enginyeria">
+                              <option value="enginyeria-sistemes">Enginyeria de Sistemes</option>
+                              <option value="enginyeria-electronica">Enginyeria Electrònica</option>
+                              <option value="enginyeria-civil">Enginyeria Civil</option>
+                              <option value="enginyeria-mecanica">Enginyeria Mecànica</option>
+                            </optgroup>
+                            <optgroup label="Art i Disseny">
+                              <option value="disseny-grafic">Disseny Gràfic</option>
+                              <option value="arts-plastiques">Arts Plàstiques</option>
+                              <option value="arquitectura">Arquitectura</option>
+                              <option value="fotografia">Fotografia</option>
+                            </optgroup>
+                            <optgroup label="Ciències Naturals">
+                              <option value="biologia">Biologia</option>
+                              <option value="quimica">Química</option>
+                              <option value="fisica">Física</option>
+                              <option value="matematiques">Matemàtiques</option>
+                            </optgroup>
+                          </select>                          
+                </section>
+                <section id="mas">
+                    <fieldset>
+                        <legend>Dades adicionals</legend>
+    
+                        <label for="explicacio">Explicació</label><br>
+                        <textarea id="explicacio" name="explicacio" rows="10" cols="50" placeholder="Fes una breu explicació sobre perquè hauríem d'escollir-te." required></textarea>
+    
+                        <label for="foto">Selecciona una fotografia:</label>
+                        <input type="file" id="foto" name="foto" accept="image/*" required>
+                        <p>Seleccioneu un fitxer d'imatge.</p>
+                    </fieldset>
+                </section>
+                <section id="politica">
+                    <fieldset>
+                        <legend>Politica de privacitat de la empresa</legend>
+                        
+                        <label>
+                            <input type="checkbox" id="Politica" name="politica_privacitat" required>
+                            <p>He llegit i accepto les politiques de privacitat.</p>
+                        </label>
+                        
+                    </fieldset>
+                </section>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+    <footer>
+        <p>Izan Jane WEB 2024 ©</p>
+    </footer>
+    </body></html>
+</form>
